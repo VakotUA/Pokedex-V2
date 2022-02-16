@@ -1,0 +1,77 @@
+.notFound {
+	color: violet;
+}
+
+.cardsBlock {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+}
+
+.cards {
+	width: 100%;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	width: 200px;
+	height: 250px;
+	background-color: white;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 0 1px 3px blueviolet;
+	box-shadow: opacity 0.5;
+	border: 1px solid blueviolet;
+	position: relative;
+}
+
+.card:hover {
+	box-shadow: 0 1px 10px blueviolet;
+	border: 1px solid blueviolet;
+}
+
+.card::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: blueviolet;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-radius: 10px;
+	opacity: 0;
+	transition: opacity .3s;
+}
+
+.card.active::before {
+	opacity: 0.25
+}
+
+.image {
+	height: 120px;
+}
+
+.types {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	z-index: 200;
+}
+
+.type {
+	padding: 5px 10px;
+	border-radius: 100px;
+	background: var(--type-clr, blueviolet);
+	color: white;
+	font-size: 16px;
+	line-height: 1.25em;
+	text-transform: capitalize;
+	text-shadow: 0 0 2px white;
+}

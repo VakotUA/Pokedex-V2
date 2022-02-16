@@ -1,0 +1,60 @@
+.pages {
+	display: inline-flex;
+	justify-content: space-between;
+
+	width: 350px;
+}
+
+.button {
+	border: none;
+	background: none;
+
+	width: 60px;
+	margin: 10px 5px;
+
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+
+	border-radius: 100px;
+}
+
+.pagination .button {
+	color: violet;
+	border: 1px solid violet;
+}
+
+.pagination .button.active, .pagination .button:hover {
+	color: white;
+	background-color: violet;
+}
+
+.pages .button, .pages input {
+	color: violet;
+	border: none;
+}
+
+.pages .button:hover {
+	text-shadow: 0 0 5px violet;
+}
+
+.pages input:hover {
+	box-shadow: 0 0 10px violet;
+}
+
+.pages input[type="number"] {
+	background-color: violet;
+	border-radius: 100px;
+	padding: 0 10px;
+	width: 70px;
+	color: white;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 25px;
+	text-align: center;
+}
+
+.pages input[type="number"]::-webkit-outer-spin-button,
+.pages input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}

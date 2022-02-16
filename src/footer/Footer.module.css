@@ -1,0 +1,30 @@
+.footer {
+	width: 100%;
+	padding: 20px;
+}
+
+.types {
+	width: 600px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.type {
+	margin: 10px;
+	padding: 5px 10px;
+	border-radius: 100px;
+	background: white;
+	opacity: 0.5;
+	font-size: 16px;
+	line-height: 1.25em;
+	text-transform: capitalize;
+	text-shadow: 0 0 2px white;
+}
+
+.type:hover, .type.active {
+	background: var(--type-clr, blueviolet);
+	color: white;
+	opacity: 1;
+}
